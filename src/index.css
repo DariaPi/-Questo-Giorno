@@ -5,9 +5,335 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #D0B8A8;
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 54px;
+  text-shadow: #630000 5px 3px 7px;
+}
+
+body, button {
+  font-family: 'Spectral', serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #630000;
+}
+
+.link {
+  text-decoration: none;
+  color: #EEEBDD;
+  font-size: 24px;
+  padding: 10px 0px;
+  margin: 0px 20px;
+}
+
+.link:hover {
+  color: #D8B6A4;
+  text-decoration: underline;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  min-height: 80vh;
+}
+
+hr {
+  border: #42150d solid 1.5px;
+}
+
+h1 {
+  color: #42150d;
+}
+
+.aboutBox {
+  display: flex;
+  justify-content: center;
+}
+
+.otherPic {
+  opacity: .3;
+  margin: 20px;
+  cursor: pointer;
+  border: #42150d thick double;
+  padding: 2px;
+  overflow-x: hidden;
+}
+
+.aboutBtn {
+  width: 20px;
+  border: none;
+  color: #42150d;
+  background-color: transparent;
+}
+
+.aboutPic {
+  border: #42150d thick double;
+  padding: 2px;
+}
+
+.AbtTxt {
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.menuBox {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.categoryItem {
+  padding: 5px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.categoryItem:hover {
+  background-color: #42150d;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.selectedCategory {
+  background-color: #630000;
+  color: #FFF;
+}
+
+.categoryBox {
+  width: 15%;
+}
+
+.dishesBox {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.dishItem {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.dishTxt {
+  overflow-wrap: break-word;
+}
+
+.dishImg {
+  border: thick double #42150d;
+  padding: 2px;
+}
+
+.dishBtn {
+  background-color: #DFD3C3;
+  border: thick double #42150d;
+  margin: 2px;
+  padding: 2px;
+}
+
+.quantityBtn {
+  width: 30px;
+}
+
+.quantityNumber {
+  width: 10px;
+}
+
+.addBtn {
+  width: 150px;
+}
+
+.orderAlrt {
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(238, 235, 221, .6);
+  border: #42150d 2px solid;
+  width: 40%;
+  height: 20vh;
+  top: 30%;
+  right: 30%;
+  left: 30%;
+  font-size: 28px;
+  text-align: center;
+  display: none;
+}
+
+.tnxBtn {
+  padding: 5px;
+  color: #EEEBDD;
+  background-color: #630000;
+  text-transform: uppercase;
+  border: #D8B6A4 thick double;
+}
+
+.cartContainer {
+  margin: 10px 50px;
+  display: flex;
+}
+
+.cartBox {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.orderBox {
+  width: 60%;
+}
+
+.orderBtnBox {
+  margin-top: 150px;
+}
+
+.orderBtn {
+  padding: 15px;
+  color: #EEEBDD;
+  background-color: #630000;
+  text-transform: uppercase;
+  border: #D8B6A4 thick double;
+}
+
+.cartItm {
+  margin: 30px;
+  display: flex;
+  border: #42150d thick double;
+  padding: 3px;
+}
+
+.cartTxt {
+  background-color: rgba(99, 0, 0, .8);
+  color: #FFF;
+  width: 150px;
+  padding: 5px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.footingBox {
+  display: flex;
+  justify-content: space-evenly;
+  color: #42150d;
+}
+
+.tel {
+  text-decoration: none;
+  color: #42150d;
+}
+
+.footList {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.footTxt {
+  text-align: center;
+}
+
+@media all and (max-width: 820px) {
+  .container {
+    width: 100vw;
+    overflow: hidden;
+    min-height: 75vh;
+  }
+
+  .dishImg {
+    width: 200px;
+    height: 280px;
+  }
+
+  .orderAlrt {
+    width: 60%;
+    height: 20vh;
+    right: 20%;
+    left: 20%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .cartContainer {
+    flex-direction: column-reverse;
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+  }
+
+  .menuBox {
+    padding: 0px;
+  }
+
+  .categoryBox {
+    width: 20%;
+  }
+  
+  .dishesBox {
+    width: 65%;
+  }
+
+  .cartBox {
+    width: 100vw;
+    justify-content: space-around;
+    margin: 2px;
+  }
+
+  .orderBtnBox {
+    margin-top: 10px;
+  }
+
+  .cartImg {
+    height: 170px;
+    width: 115px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .aboutPic {
+    width: 300px;
+    height: auto;
+  }
+
+  .otherPic {
+    display: none;
+  }
+
+  .AbtTxt {
+    width: 90%;
+  }
+
+  .categoryBox {
+    width: 30%;
+  }
+
+  .dishesBox {
+    width: 60%;
+  }
+
+  .orderAlrt {
+    width: 80%;
+    height: 20vh;
+    right: 10%;
+    left: 10%;
+  }
+
+  .footingBox {
+    flex-direction: column;
+  }
 }

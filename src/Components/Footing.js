@@ -6,7 +6,7 @@ const Footing = () => {
                     <p><a href="tel:+71234567890" className="tel">+7 (123) 456-78-90</a></p>
                     <p><a href="mailto:QGiornoSupper@mail.ru" className="tel">QGiornoSupper@gmail.com</a></p>
                     <hr/>
-                    <h3>Questo giorno</h3>
+                    <h3>Questo Giorno</h3>
                     <p>2019-2022</p>
                 </div>
                 <ul className="footTxt footList">

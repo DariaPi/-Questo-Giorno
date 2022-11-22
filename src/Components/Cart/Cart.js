@@ -20,7 +20,7 @@ const Cart = () => {
     return (
         <div className="container">
             <div className="orderAlrt">
-                <h3>Thanks for your order</h3>
+                <h4>Thanks for your order</h4>
                 <button onClick={clsTnx} className="tnxBtn">back</button>
             </div>
             <div className="cartContainer">

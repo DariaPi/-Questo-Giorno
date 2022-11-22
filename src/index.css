@@ -336,7 +336,7 @@ h1 {
 
   .orderAlrt {
     width: 80%;
-    height: 20vh;
+    min-height: 20vh;
     right: 10%;
     left: 10%;
   }
